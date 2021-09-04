@@ -7,6 +7,21 @@ $yellow: #fabe50;
 /// Estas variáveis se referem as medidas do nosso blog
 $img-width: 45%;
 
+/// Estas variáveis se referem aos placeholders selector
+%no-decoration {
+  text-decoration: none;
+}
+%u-decoration {
+  text-decoration: underline;
+}
+
+/// Estas variáveis se referem aos mixins
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header {
   /* Este trecho de estilo se refere 
 ao header do nosso blog*/
@@ -75,6 +90,7 @@ ao header do nosso blog*/
     margin-left: auto;
     margin-right: auto;
   }
+
   &__title {
     text-decoration: none;
     font-size: 22px;
@@ -169,6 +185,65 @@ ao header do nosso blog*/
     margin-bottom: 10px;
     &:hover {
       color: $purple;
+    }
+  }
+
+  &__sidebar {
+    width: 25%;
+    padding: 40px 10px;
+  }
+
+  .sidebar {
+    &__top {
+      border: 1px solid $light-grey;
+      padding: 15px 20px;
+    }
+
+    &__title {
+      background: $yellow;
+      text-align: center;
+      padding: 10px 20px;
+      margin: 0;
+      letter-spacing: 1.5;
+    }
+
+    &__posts {
+      @include reset-list;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 15px 0;
+      &:not(:last-child) {
+        border-bottom: 1px dashed $light-grey;
+      }
+    }
+
+    &__img {
+      width: 40%;
+    }
+
+    &__details {
+      width: 50%;
+      padding-left: 10px;
+    }
+
+    &__post-title {
+      font-size: 14px;
+      color: $purple;
+      @extend %no-decoration;
+
+      &:hover {
+        @extend %u-decoration;
+      }
+    }
+
+    &__post-date {
+      font-size: 14px;
+      margin: 5px 0 0 0;
     }
   }
 }

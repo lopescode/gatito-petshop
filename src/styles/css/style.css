@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.main .sidebar__post-title {
+  text-decoration: none;
+}
+
+.main .sidebar__post-title:hover {
+  text-decoration: underline;
+}
+
 .header {
   /* Este trecho de estilo se refere 
   ao header do nosso blog*/
@@ -147,6 +155,51 @@
 }
 .main__a:hover {
   color: #a050be;
+}
+.main__sidebar {
+  width: 25%;
+  padding: 40px 10px;
+}
+.main .sidebar__top {
+  border: 1px solid #eaeaeb;
+  padding: 15px 20px;
+}
+.main .sidebar__title {
+  background: #fabe50;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0;
+  letter-spacing: 1.5;
+}
+.main .sidebar__posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main .sidebar__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 0;
+}
+.main .sidebar__list:not(:last-child) {
+  border-bottom: 1px dashed #eaeaeb;
+}
+.main .sidebar__img {
+  width: 40%;
+}
+.main .sidebar__details {
+  width: 50%;
+  padding-left: 10px;
+}
+.main .sidebar__post-title {
+  font-size: 14px;
+  color: #a050be;
+}
+.main .sidebar__post-date {
+  font-size: 14px;
+  margin: 5px 0 0 0;
 }
 
 .about {
