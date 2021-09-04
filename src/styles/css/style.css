@@ -47,6 +47,8 @@
 }
 
 .main {
+  /* Este trecho de estilo se refere 
+  ao main do nosso blog*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -108,12 +110,12 @@
   font-size: 16px;
   letter-spacing: 1.5;
   color: #a050be;
-  background: #FABE50;
+  background: #fabe50;
   padding: 10px 20px;
   transition: 0.3s;
 }
 .main__btn:hover {
-  color: #FABE50;
+  color: #fabe50;
   background: #a050be;
 }
 .main__info {
@@ -145,6 +147,74 @@
 }
 .main__a:hover {
   color: #a050be;
+}
+
+.about {
+  /* Este trecho de estilo se refere 
+  ao about do nosso blog*/
+  width: 80%;
+  margin: 0 auto 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about__title {
+  background: #eaeaeb;
+  text-align: center;
+  padding: 20px;
+}
+.about__h1 {
+  font-size: 22px;
+  color: #464646;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.about .breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .breadcrumb__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #464646;
+}
+.about .breadcrumb__link:hover {
+  text-decoration: underline;
+  color: #a050be;
+}
+.about .breadcrumb__img {
+  width: 11px;
+}
+.about__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.about__intro {
+  font-weight: 100;
+  color: #464646;
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 16px;
+}
+.about__split {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about__img2 {
+  width: 45%;
+}
+.about__txt {
+  width: calc(100% - 45%);
+}
+.about__p {
+  font-size: 14px;
+  padding: 10px 20px;
+  color: #464646;
 }
 
 /* Este trecho de estilo se refere 
