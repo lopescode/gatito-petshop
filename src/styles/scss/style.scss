@@ -2,57 +2,170 @@
 $purple: #a050be;
 $light-grey: #eaeaeb;
 $dark-grey: #464646;
+$yellow: #FABE50;
 
-/* Este trecho de estilo se refere 
-ao header do nosso blog*/
 .header {
+  /* Este trecho de estilo se refere 
+ao header do nosso blog*/
   font-family: Arial, Helvetica, sans-serif;
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 350px;
+  }
+  .menu {
+    /* Este trecho de estilo se refere 
+    ao menu do nosso blog*/
+    &__list {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid $light-grey;
+      border-bottom: 1px solid $light-grey;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 20px 0;
+    }
+    &__links {
+      position: relative;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -3px;
+        margin: auto;
+        height: 15px;
+        width: 1px;
+        background: $light-grey;
+      }
+    }
+    &__link {
+      padding: 0 25px;
+      color: $dark-grey;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
 }
 
-.header__logo {
-  text-align: center;
-}
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
 
-.header__img {
-  max-width: 350px;
-}
+    &__content {
+        width: 70%;
+        padding: 40px 8px;
+    }
 
-/* Este trecho de estilo se refere
-ao menu do nosso blog*/
-.menu__list {
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  padding: 20px 0;
-}
+    &__post {
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__title {
+        text-decoration: none;
+        font-size: 22px;
+        color: $dark-grey;
+        letter-spacing: 1.5;
+        &:hover {
+            color: $purple;
+        }
+    }
 
-.menu__links {
-  position: relative;
-}
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-.menu__links:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -3px;
-  margin: auto;
-  height: 15px;
-  width: 1px;
-  background: $light-grey;
-}
+    &__date {
+        margin: 0 10px;
+        font-size: 12px;
+        font-style: italic;
+    }
 
-.menu__link {
-  padding: 0 25px;
-  color: $dark-grey;
-}
+    &__tag{
+        font-size: 14px;
+        padding: 5px 7px;
+        color: $purple;
+        border: 1px solid $purple;
+        margin: 0 10px;
+    }
 
-.menu__link:hover {
-  color: $purple;
+    &__details {
+        border: 1px solid $light-grey;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__description {
+        padding: 40px 0 25px;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    &__btn {
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1.5;
+        color: $purple;
+        background: $yellow;
+        padding: 10px 20px;
+        transition: .3s;
+        &:hover {
+            color: $yellow;
+            background:$purple;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $light-grey;
+        margin-top: 30px;
+    }
+
+    &__author{
+        width: 50%;
+        border-right: 1px solid $light-grey;
+    }
+
+    &__p {
+        font-size: 14px;
+        color: $dark-grey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__comments {
+        width: 50%;
+    }
+    
+    &__a {
+        text-decoration: none;
+        font-size: 14px;
+        color: $dark-grey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &:hover {
+            color: $purple;
+        }
+    }
 }
 
 /* Este trecho de estilo se refere 
@@ -65,13 +178,13 @@ ao rodapé do nosso blog*/
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
-}
 
-.footer__logo {
-  max-width: 100px;
-}
+  &__logo {
+    max-width: 100px;
+  }
 
-.footer__txt {
-  font-size: 14px;
-  margin: auto;
+  &__txt {
+    font-size: 14px;
+    margin: auto;
+  }
 }
