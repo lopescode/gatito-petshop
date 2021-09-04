@@ -1,0 +1,77 @@
+/// Estas variáveis se referem as cores principais do nosso blog
+$purple: #a050be;
+$light-grey: #eaeaeb;
+$dark-grey: #464646;
+
+/* Este trecho de estilo se refere 
+ao header do nosso blog*/
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__logo {
+  text-align: center;
+}
+
+.header__img {
+  max-width: 350px;
+}
+
+/* Este trecho de estilo se refere
+ao menu do nosso blog*/
+.menu__list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px 0;
+}
+
+.menu__links {
+  position: relative;
+}
+
+.menu__links:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -3px;
+  margin: auto;
+  height: 15px;
+  width: 1px;
+  background: $light-grey;
+}
+
+.menu__link {
+  padding: 0 25px;
+  color: $dark-grey;
+}
+
+.menu__link:hover {
+  color: $purple;
+}
+
+/* Este trecho de estilo se refere 
+ao rodapé do nosso blog*/
+.footer {
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.footer__logo {
+  max-width: 100px;
+}
+
+.footer__txt {
+  font-size: 14px;
+  margin: auto;
+}

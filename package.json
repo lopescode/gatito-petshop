@@ -1,0 +1,22 @@
+{
+  "name": "gatito-petshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoolopes01/gatito-petshop.git"
+  },
+  "author": "Leonardo Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoolopes01/gatito-petshop/issues"
+  },
+  "homepage": "https://github.com/leoolopes01/gatito-petshop#readme",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
